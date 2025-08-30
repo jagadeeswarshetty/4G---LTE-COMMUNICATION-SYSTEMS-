@@ -1,0 +1,112 @@
+STEP 1: 
+Switch on PC’s of Core Network, eNB and Router. 
+
+
+STEP 2: Perform the following operations on Core Network PC. 
+Open the terminal window. 
+
+
+STEP 3: 
+In Terminal 1: To check CN IP address. 
+Enter: ifconfig 
+Note down, the IP address of enp0s31f6
+
+
+STEP 4: 
+Switch on the eNB PC and open terminal window 
+
+
+STEP 5: Perform the following operations on eNB PC 
+In Terminal 1: To check eNB IP address. 
+Enter: ifconfig 
+Note down, the IP address of enp0s31f6 
+
+
+STEP 6: This operation is performed on eNB PC to ping CN PC 
+In the terminal window ping the ip address of CN enp0s31f6 from eNB PC 
+ping 192.168.1.2 or your system ip address
+After few pings, press ctrl+C 
+
+
+STEP 7: This operation is performed on CN PC to ping eNB PC. 
+In the terminal window ping the ip address of eNB enp0s31f6 from CN PC 
+ping 192.168.1.3  or your system ip address
+
+
+STEP 8: Perform the following operations on Core Network PC. 
+Open a new terminal window, type the following to create a tcpdump to record 
+communication and exchanges between eNB and CN to provide insight into UE, E- 
+UTRAN, MME and SGW. 
+sudo tcpdump -i any -w cn.pcap 
+or 
+sudo tcpdump -i any -w student_id_number_date_cn.pcap 
+
+
+
+STEP 9: 
+Open a new terminal window, type the following to enable Home Subscriber Server 
+(HSS) 
+startHSS
+
+
+STEP 10: 
+Open a new terminal window, type the following to enable Mobility Management 
+Entity (MME) 
+startMME 
+
+STEP 11: 
+Open a new terminal window, type the following to enable Serving Gateway Control 
+plane function (SGW-C) 
+startSPGWC
+
+
+STEP 11: 
+Open a new terminal window, type the following to enable Serving Gateway Control 
+plane function (SGW-C) 
+startSPGWC
+
+
+STEP 13: 
+Open a new terminal window, type the following to view number of users equipment’s 
+connected to the non-standalone network (4G network) 
+showUsers 
+
+STEP 14: Perform the following operations on eNB PC. 
+Open a new terminal window, type the following to create a tcpdump to record 
+communication and exchanges between eNB and CN to provide insight into UE, E- 
+UTRAN, MME and SGW. 
+sudo tcpdump -i any -w enb.pcap 
+or 
+sudo tcpdump -i any -w student_id_number_date_enb.pcap
+
+
+
+STEP 15:  
+Open a new terminal window, type the following to enable Evolved Node B (eNB) 
+StarteNB
+
+
+
+STEP 16: Perform the following operations on Core Network PC. 
+Please check the terminal window of STEP 13 (showUsers), students can view their 
+user equipment’s has connected to the non-standalone network (4G network). 
+
+
+
+After STEP 16, press ctrl+C in all open terminals to end operations in CN and eNB PCs. 
+• Transfer the .pcap files from STEP 8 and STEP 14 to student storage device or student 
+folder on desktop for Analyzing User Equipment registration process in 4G mobile network. 
+
+
+
+Some important things 
+1. Illustrate the features of Core Network. 
+2. Illustrate the features of eNB. 
+3. Interpret the connection between CN and eNB. 
+4. Discuss the latency time between CN and eNB (step 6 and 7). 
+5. Interpret UE. 
+6. Interpret E-UTRAN. 
+7. Show which PC is CN. 
+8. Show which PC is eNB. 
+9. Illustrate STEP 8. 
+10. Illustrate Home Subscriber Server (HSS).
