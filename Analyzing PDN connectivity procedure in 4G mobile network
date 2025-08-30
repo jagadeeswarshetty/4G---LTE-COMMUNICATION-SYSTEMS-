@@ -1,0 +1,71 @@
+Open .cpcap file using Wireshark. 
+1. In Wireshark after applying s1ap filter, Downlink NAS Transport to view ESM 
+information request.
+
+2. In Wireshark after applying s1ap filter, Uplink NAS Transport to view ESM 
+information response.
+
+3. In Wireshark view the message details of Initial Context Setup Request, Attach 
+accept, Activate default EPS bearer context request communicated via s1ap protocol.
+
+4. In Wireshark view the message details of Create Session Request via GTPv2 protocol.
+
+5. In Wireshark view the message details of UE Capability Info Indication and 
+Information communicated via s1ap protocol. 
+
+6. In Wireshark view the message details of Initial Context Setup Response, Attach 
+complete and the activation of default EPS bearer context accept communicated via 
+s1ap protocol. 
+
+
+
+
+## important
+
+Importance of IPv6 in LTE 
+1. More Addresses 
+o IPv4 Limitation: IPv4 can only provide about 4.3 billion addresses, which isn't  
+enough for the growing number of devices. 
+o IPv6 Advantage: IPv6 can offer around 340 trillion trillion trillion addresses,  
+allowing every device to have its unique address. 
+2. Better Network Performance 
+o Simpler Headers: IPv6 has a simpler packet format, making it easier for  
+routers to process data quickly. 
+o Efficient Routing: IPv6 improves how data is routed, reducing delays and  
+speeding up transmission. 
+3. Enhanced Security 
+o Built-in Protection: IPv6 includes security features like encryption and  
+authentication, making data transfers safer without needing extra protocols. 
+4. Support for Modern Needs 
+o Mobile Support: IPv6 helps devices stay connected even when moving 
+between different network areas. 
+o Quality of Service: IPv6 can manage different types of internet traffic better,  
+ensuring smoother and more reliable service. 
+Sequence of IPv6 Address Assignment in LTE 
+1. Connecting to the Network 
+o When a device connects to the LTE network, it needs an IP address to 
+start communicating. 
+2. Address Assignment by the PDN Gateway 
+o The Packet Data Network (PDN) Gateway assigns an IPv6 address to 
+the device from a pool of available addresses. 
+3. Setting Up the Connection 
+o The network creates a special path called a "bearer" for data to  
+Page | 14 
+travel between the device and the network. The IPv6 address is linked to this path. 
+4. Managing the Address 
+o As the user moves or stays connected, the network keeps track of the 
+IPv6 address to ensure a smooth connection. 
+
+
+## Questions
+
+1. Illustrate the process of IP allocation in LTE. 
+2. Difference between IP4 and IP6 address. 
+3. Explain Aggregate Maximum Bit Rate (AMBR). 
+4. Explain QCI. 
+5. What is IMSI. 
+6. What are the features of GTPv2 protocol. 
+
+
+
+
