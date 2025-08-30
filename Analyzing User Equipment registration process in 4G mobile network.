@@ -1,0 +1,52 @@
+Software Requirement: 
+Download the Wireshark tool from https://www.wireshark.org/download.html 
+
+
+Files Requirement: 
+• During Enabling 4G mobile network and registration of User Equipment, .pcap files were generated for CN and eNB in Step 8 and Step 
+14.
+
+1. Open CN.cpcap file using Wireshark. 
+2. In “Apply a display filter” type s1ap to view only s1ap protocol exchanges.
+3. In Wireshark after applying s1ap filter, select Initial UE Message, Attach 
+request, PDN connectivity request. 
+4. In Wireshark after applying s1ap filter, select Authentication Request.
+5. In Wireshark after applying s1ap filter, select Authentication Response. 
+6. In Wireshark after applying s1ap filter, select Downlink NAS Transport, 
+security mode command. 
+7. In Wireshark after applying s1ap filter, select Uplink NAS Transport, 
+security mode complete.
+
+
+Some Important Questions 
+1. Describe RACH preambles? 
+Ans. RACH preambles are random access signals used by devices to initiate communication 
+with a cellular network. 
+2. Interpret Globally Unique Temporary Identifier (GUTI). 
+Ans. A Globally Unique Temporary Identifier (GUTI) is a temporary identifier assigned 
+to a mobile device to protect its privacy during network communication. 
+3. Identify the initial UE message from eNB to MME. 
+Ans.it is a initial context setup request 
+4. Outline the MME communicates to HSS. 
+Ans. The MME communicates with the HSS (Home Subscriber Server) 
+primarily through the Diameter protocol for operations such as 
+authentication, authorization, and retrieving subscriber information. 
+5. Outline the Authentication Response message. 
+Ans. It is to confirm the success of the authentication process, 
+including the results of the authentication calculations and any necessary security parameters. 
+6. Differentiate encryption and integrity protection algorithms. 
+Page | 16 
+Ans.the encryption algorithm can protect the confidentialty of data by converting into unreadable format  
+the integrity algorithm is used to protect the  data has not been altered by verifying its authenticity and integrity 
+through checksums or hashes. 
+7. Relate integrity protection and its importance. 
+Ans. Integrity protection ensures that data has not been tampered with during transmission,  
+safeguarding its accuracy and authenticity, which is crucial for maintaining trust and security  
+in communication systems. 
+8. Illustrate the features of NAS. 
+Ans. 
+• Session management 
+• Mobilty management 
+• Connection management  
+• Authentication and security 
+• Bearer management 
