@@ -3,7 +3,7 @@
 This project explains the **LTE EPC (Evolved Packet Core)** architecture with **Control and User Plane Separation (CUPS)**.
 
 ## 📌 Architecture Diagram
-![LTE EPC CUPS Architecture](be024062-ceb7-4293-9d1e-9295469bd844.png)
+<img src="4g-Architecture.png" alt="4g-Architecture" width="600">
 
 ## 📖 Components
 
