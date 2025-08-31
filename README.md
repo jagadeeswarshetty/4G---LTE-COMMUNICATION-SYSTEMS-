@@ -41,5 +41,4 @@ This project explains the **LTE EPC (Evolved Packet Core)** architecture with **
 
 ---
 
-## ✅ Summary
 This is the **LTE EPC CUPS Architecture** where control and user planes are separated, enabling **flexibility, scalability, and efficient data handling** in mobile networks.  
